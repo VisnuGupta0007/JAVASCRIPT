@@ -85,14 +85,80 @@
 // }
 
 // (3) : for-of loop : loops through the values of an Array.
-////////////////////////////////
+// let arr = [11, 23, 24, 534, 77, 95, 55]
+// let even = 0
+// let odd = 0
+
+// let sumEven = 0
+// let sumOdd = 0
+// function number(){
+// for (let res of arr) {
+//     if (res % 2 == 0) {
+//         even++
+//     }
+//     else {
+//         odd++
+//     }
+    
+// }
+// return {even, odd}
+// }
+// console.log(number())  // Output : { even: 2, odd: 5 }
+
+// 1st example by using the function
+// function sumEvenOdd() {
+//     for(let i = 0; i < arr.length; i++){
+//     if (arr[i] % 2 == 0) {
+//          sumEven += arr[i]
+//     }
+//     if(arr[i] %2 != 0) {
+//         sumOdd +=  arr[i]
+//     }
+   
+// }
+// return {sumEven, sumOdd}
+// }
+// console.log(sumEvenOdd())  // Output : { sumEven: 558, sumOdd: 261 }
+
+/// 2nd Example by using the simple for of loop.
+// for(let val of arr){
+// if(val % 2 ==0){
+// sumEven+= val
+// }
+// if(val % 2 != 0){
+// sumOdd+= val
+// }
+
+// }
+// console.log(sumEven, sumOdd)
+
+//////////////////////////////////////////////////////////////////////
+
+// ForEach Loop : forEach loop in JavaScript is used to iterate over an array and execute a callback function for each element.  
+
+// Print the Array Elements
+// let arr = [43,33,21,45,6,56]
+// arr.forEach((val)=>{
+//     console.log(val)
+// })
+  // Output : 43,33,21,45,6,56
+
+// we have sum the Elements:
+// let arr = [22,34,32,52,55,32,56]
+// let sum = 0
+// arr.forEach((val)=>{
+// sum += val
+// })
+// console.log(sum)  // Output : 283
+
+////////////////////////////////////////////////////////////////////////////////
 
 // While loop : Used when the number of iterations is unknown and based on a condition.
 // let i = 4
 // while(i<10){
 //     console.log(i +1);
 //     i++
-// } 
+// }
 
 
 // Output : after the 4 because we have mention the value of i. that`s why it is given value of i.
